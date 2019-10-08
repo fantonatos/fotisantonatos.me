@@ -11,6 +11,8 @@ body{
 	font-size: 11pt;
 }
 
+/* styling of links */
+
 h1 a{
 	text-decoration: none;
 	color: black;
@@ -36,10 +38,16 @@ nav a{
 	padding-right: 20px;
 }
 
+/* styling of images */
+
 img{
+	image-orientation: from-image;
 	height: 450px;
-	margin-bottom: 2em;
+	margin: 0px 2em 2em 0px;
 }
+
+/* other styling */
+
 footer{
 	font-size: 10pt;
 	color: grey;
