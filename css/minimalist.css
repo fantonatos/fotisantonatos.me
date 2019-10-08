@@ -36,6 +36,10 @@ nav a{
 	padding-right: 20px;
 }
 
+img{
+	height: 450px;
+	margin-bottom: 2em;
+}
 footer{
 	font-size: 10pt;
 	color: grey;
