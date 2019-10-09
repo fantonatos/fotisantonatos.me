@@ -17,14 +17,18 @@ h1 a{
 	text-decoration: none;
 	color: black;
 	font-size: 35pt;
+	transition: transform 1s ease, font-weight .2 ease;
 }
 
 a{
 	text-decoration: none;
 	color: blue;
+	transition: transform .2s ease;
+	display: inline-block;
 }
 
 a:hover{
+	transform: skewX(-5deg);
 	font-style: oblique;
 }
 
@@ -35,7 +39,12 @@ a:active{
 nav a{
 	text-decoration: none;
 	display: inline-block;
+	align: right;
 	padding-right: 20px;
+}
+
+.right{
+	float: right;
 }
 
 /* styling of images */
