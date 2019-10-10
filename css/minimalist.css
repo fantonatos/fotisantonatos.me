@@ -27,8 +27,13 @@ a{
 	display: inline-block;
 }
 
+h1 a:hover{
+	transform: skewX(-5deg) translate(3.5px, 0px);
+	font-style: oblique;
+}
+
 a:hover{
-	transform: skewX(-5deg);
+	transform: skewX(-5deg) translate(.5px, 0px);
 	font-style: oblique;
 }
 
