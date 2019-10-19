@@ -11,6 +11,11 @@ body{
 	font-size: 11pt;
 }
 
+
+
+/* styling of text and headings */
+
+
 /* styling of links */
 
 h1 a{
@@ -52,6 +57,8 @@ nav a{
 	float: right;
 }
 
+
+
 /* styling of images */
 
 img{
@@ -60,6 +67,8 @@ img{
 	margin: 0px 2em 2em 0px;
 	display: block;
 }
+
+
 
 /* other styling */
 
