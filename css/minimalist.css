@@ -8,13 +8,16 @@ body{
 	margin-left: calc(25vw + 5px); /* 182 px */
 	margin-right: calc(15vw + 5px);
 	
-	font-size: 11pt;
+	font-size: 12pt;
 }
 
 
 
 /* styling of text and headings */
 
+p{
+	line-height: 1.75em;
+}
 
 /* styling of links */
 
