@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body style="font-size: 13pt;">
+        <p id="useragent-entire"></p>
+        <p id="devicename"></p>
+    </body>
+    <script>
+        // display the entire user agent
+        document.getElementById("useragent-entire").innerText = navigator.userAgent;
+
+        let mobile = false;
+        let mobilekeywords = ['blackberry', 'iphone', 'ipad', 'ipod', 'android', 'mobile', 'webos', 'phone', 'iemobile'];
+
+        // detect if device is mobile
+        mobilekeywords.forEach(element => {
+            if(navigator.userAgent.toLowerCase().search(element) != -1)
+                mobile = true;
+        });
+
+        let msg = "not a mobile device.";
+        if(mobile)
+            msg = "a mobile device.";
+        
+        document.getElementById('devicename').innerText = 'This is ' + msg;
+    </script>
+</html>
