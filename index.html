@@ -1,27 +1,54 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-	
-		<title>Fotis Antonatos</title>
-		<link rel = "stylesheet" type = "text/css" href = "css/minimalist.css" />
+    <head>
+        <title>Fotis Antonatos</title>
+        <style>
+            
+            nav{
+                background-color: #222222;
+				padding-left: 25px;
+                padding: .2em;
+                padding-left: 2in;
+            }
 
-		<!-- jQuery Mobile Reference -->
-        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-        <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />-->
-	</head>
-	<body>
-		<h1><a href="http://fotisantonatos.me">Fotis Antonatos</a></h1>
-		<nav><a href="http://fotisantonatos.me/projects">Projects</a><a href="http://fotisantonatos.me/photography">Photography</a>
-		<!--<a class="right" href="http://fotisantonatos.me/docs/Fotis Antonatos.pdf">R&eacutesum&eacute</a></nav>-->
-		
-		<br />
-		<br />
-		
-		<p>Fotis Antonatos is a Computer Science Major at Binghamton University. As my website is currently under construction, please see my <a href="https://github.com/fantonatos">GitHub</a> or <a href="https://linkedin.com/in/fotisantonatos">LinkedIn</a> profiles for more information. Thank You!</p>
-		
-		<footer>
-			Copyright &copy Fotis Antonatos 2019
-		</footer>
-	</body>
+            .nav {
+                text-decoration: none;
+                font-size: small;
+                color: white;
+            }
+
+            body {
+                background-color: rgb(240, 240, 240);
+				font-family: sans-serif;
+                margin: 0;
+            }
+            
+            #main-container {
+                display: grid; /* with this we declare our container as a grid */
+
+                grid-template-columns: auto .6fr auto;
+                grid-template-rows: auto;
+            }
+
+            #main-content{
+                grid-column: 2;
+                display: block;
+                grid-row: 1;
+            }
+        </style>
+    </head>
+    
+    <body> 
+        <nav class="nav">
+            fotisantonatos.me&Tab;&raquo;&Tab;
+            <a class="nav" href="/.">Index</a>
+        </nav>
+
+        <div id="main-container">
+            <div id="main-content">
+                <h1>Fotis Antonatos</h1>
+                <p>Computer Science Major at Binghamton University.</p>
+            </div>
+        </div>
+    </body>
 </html>
