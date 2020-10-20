@@ -24,18 +24,38 @@
 				font-family: 'Source Sans Pro', sans-serif;
                 margin: 0;
             }
-            
+
             #main-container {
-                display: grid; /* with this we declare our container as a grid */
+                display: grid;
 
                 grid-template-columns: auto .6fr auto;
                 grid-template-rows: auto;
             }
 
-            #main-content{
+            #main-content {
                 grid-column: 2;
                 display: block;
                 grid-row: 1;
+            }
+
+            a.floating {
+                color:darkslateblue;
+                text-decoration: none;
+            }
+
+            .floating {
+                padding: .25em;
+                margin: 2px;
+                font-size: small;
+                border-radius: 6px;
+                border: .5px solid darkgray;
+                transition: all .5s ease;
+            }
+
+            .floating:hover
+            {
+                font-size: 1em;
+                box-shadow: .5px .5px 5px 0px lightgray;
             }
         </style>
     </head>
@@ -51,8 +71,12 @@
         <div id="main-container">
             <div id="main-content">
                 <h1>Fotis Antonatos</h1>
-                <p>Computer Science Major at Binghamton University.</p>
+                <p>Computer Science Major at Binghamton University. Find me on <a class="floating" href="https://www.linkedin.com/in/fotisantonatos">LinkedIn</a> <a class="floating" href="https://github.com/fantonatos">GitHub</a></p>
+            
+                
             </div>
         </div>
+
+        
     </body>
 </html>
