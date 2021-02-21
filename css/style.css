@@ -18,6 +18,7 @@ nav{
 body {
     background-color: rgb(240, 240, 240);
     font-family: 'Roboto', 'Source Sans Pro', sans-serif;
+    font-size: 16pt;
     margin: 0;
 }
 
@@ -34,29 +35,27 @@ body {
     grid-row: 1;
 }
 
-a.floating {
+
+/* Styles for floating-block links */
+
+.floatingblock {
     color:darkslateblue;
     text-decoration: none;
-}
-
-.floating {
     padding: .25em;
-    margin: 2px;
-    font-size: small;
+    margin: 3px;
+    font-size: 80%;
     border-radius: 6px;
     border: .5px solid darkgray;
     background-color: rgb(240, 240, 240);
     transition: all .5s ease;
 }
 
-.floating:hover
-{
-    font-size: 1em;
-    box-shadow: .5px .5px 5px 0px lightgray;
+.floatingblock:hover {
+    font-size: 100%;
+    box-shadow: .5px .5px 5px 1px lightgray;
 }
 
-.floating:active
-{
+.floatingblock:active {
     font-size: 90%;
     box-shadow: none;
     box-shadow: inset -3px -5px 10px -5px #E0E0E0;
