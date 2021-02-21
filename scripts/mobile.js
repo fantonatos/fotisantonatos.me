@@ -1,14 +1,15 @@
 function isMobileUser()
 {
+    let mobile = false;
     let mobilekeywords = ['blackberry', 'iphone', 'ipad', 'ipod', 'android', 'mobile', 'webos', 'phone', 'iemobile'];
 
     // Detect if device is mobile
     mobilekeywords.forEach(element => {
         if(navigator.userAgent.toLowerCase().search(element) != -1)
-            return true;
+            mobile = true;
     });
 
-    return false;
+    return mobile;
 }
 
 if (isMobileUser())
