@@ -22,6 +22,10 @@ body {
     margin: 0;
 }
 
+p {
+    display: inline-block;
+}
+
 #main-container {
     display: grid;
 
@@ -39,6 +43,7 @@ body {
 /* Styles for floating-block links */
 
 .floatingblock {
+    display: inline-block;
     color:darkslateblue;
     text-decoration: none;
     padding: .25em;
