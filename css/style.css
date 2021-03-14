@@ -1,23 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
-
-nav{
-    background-color: #222222;
-}
-
-.nav {
-    text-decoration: none;
-    font-size: 9pt;
-    line-height: 1.5em;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    color: white;
-}
 
 body {
     background-color: rgb(255, 250, 244);
-    font-family: 'Roboto', 'Source Sans Pro', sans-serif;
+    font-family: 'Helvetica', 'Arial', 'Roboto', sans-serif;
     font-size: 13pt;
     margin: 0;
 }
@@ -28,7 +13,6 @@ p {
 
 #main-container {
     display: grid;
-
     grid-template-columns: auto .6fr auto;
     grid-template-rows: auto 10em auto;
 }
@@ -39,8 +23,7 @@ p {
     grid-row: 3;
 }
 
-
-/* Styles for floating-block links */
+/* Styles for links */
 
 .floatingblock {
     display: inline-block;
