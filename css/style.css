@@ -16,9 +16,9 @@ nav{
 }
 
 body {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(255, 250, 244);
     font-family: 'Roboto', 'Source Sans Pro', sans-serif;
-    font-size: 16pt;
+    font-size: 13pt;
     margin: 0;
 }
 
@@ -30,13 +30,13 @@ p {
     display: grid;
 
     grid-template-columns: auto .6fr auto;
-    grid-template-rows: auto;
+    grid-template-rows: auto 10em auto;
 }
 
 #main-content {
     grid-column: 2;
     display: block;
-    grid-row: 1;
+    grid-row: 3;
 }
 
 
@@ -44,14 +44,14 @@ p {
 
 .floatingblock {
     display: inline-block;
-    color:darkslateblue;
+    color: darkslateblue;
     text-decoration: none;
-    padding: .25em;
+    padding: .30em;
     margin: 3px;
     font-size: 80%;
-    border-radius: 6px;
+    border-radius: 3px;
     border: .5px solid darkgray;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(255, 250, 245);
     transition: all .5s ease;
 }
 
