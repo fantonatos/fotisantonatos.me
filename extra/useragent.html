@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <body style="font-size: 13pt;">
+    <head>
+        <title>User Agent - fotisantonatos.me</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Fotis, Antonatos, Binghamton, Computer, Science, Javascript, User, Agent">
+        <meta name="author" content="Fotis Antonatos">
+        <meta name="description" content="Utility script that displays your browser's user agent string and device type.">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="font-size: 12.5pt;">
         <p id="useragent-entire"></p>
         <p id="devicename"></p>
     </body>
@@ -9,7 +18,7 @@
         document.getElementById("useragent-entire").innerText = navigator.userAgent;
 
         let mobile = false;
-        let mobilekeywords = ['blackberry', 'iphone', 'ipad', 'ipod', 'android', 'mobile', 'webos', 'phone', 'iemobile'];
+        let mobilekeywords = ['blackberry', 'iphone', 'ipad', 'ipod', 'android', 'mobile', 'webos', 'phone', 'iemobile', 'pad'];
 
         // detect if device is mobile
         mobilekeywords.forEach(element => {
@@ -18,8 +27,7 @@
         });
 
         let msg = "not a mobile device.";
-        if(mobile)
-            msg = "a mobile device.";
+        if(mobile) msg = "a mobile device.";
         
         document.getElementById('devicename').innerText = 'This is ' + msg;
     </script>
