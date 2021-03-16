@@ -7,9 +7,11 @@ body {
     margin: 0;
 }
 
-p {
+p.inline {
     display: inline-block;
 }
+
+/* Styles for grid */
 
 #main-container {
     display: grid;
@@ -18,8 +20,8 @@ p {
 }
 
 #main-content {
-    grid-column: 2;
     display: block;
+    grid-column: 2;
     grid-row: 3;
 }
 
