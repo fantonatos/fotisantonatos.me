@@ -16,7 +16,7 @@ p.inline {
 #main-container {
     display: grid;
     grid-template-columns: auto .6fr auto;
-    grid-template-rows: auto 123% auto;
+    grid-template-rows: auto 10em auto;
 }
 
 #main-content {
