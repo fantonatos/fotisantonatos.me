@@ -16,13 +16,13 @@ p.inline {
 #main-container {
     display: grid;
     grid-template-columns: auto .6fr auto;
-    grid-template-rows: 1.23fr 1fr 1fr;
+    grid-template-rows: auto 123% auto;
 }
 
 #main-content {
     display: block;
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 /* Styles for links */
