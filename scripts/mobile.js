@@ -1,28 +1,33 @@
+/* 
+ * Returns true if the client is using a mobile device, false if otherwise.
+ */
 function isMobileUser()
 {
-    let mobile = false;
-    let mobileKeywords = ['blackberry', 'iphone', 'ipad', 'ipod', 'android', 'mobile', 'webos', 'phone', 'iemobile'];
+    let mobile = false
+    let mobileKeywords = ['blackberry', 'iphone', 'ipad', 'ipod',
+                          'android', 'mobile', 'webos', 'phone', 'iemobile']
 
-    // Detect if device is mobile
     mobileKeywords.forEach(element => {
         if(navigator.userAgent.toLowerCase().search(element) != -1)
-            mobile = true;
+            mobile = true
     });
 
-    return mobile;
+    return mobile
 }
 
-if (isMobileUser())
+/*
+ * Changes page to the mobile-friendly stylesheet
+ */
+function setMobileStyles()
 {
-    Array.from(document.getElementsByClassName("floatingblock")).forEach(link => {
-        console.log(link)
-        link.style.display = "block"
-        link.style.margin = "100px"
-        link.style.marginTop = "40px"
-        link.style.marginBottom = "40px"
-        link.style.fontSize = "150%"
-    })
+    var firstLink = document.getElementsByClassName("floatingblock")[0]
+    var lineBreak = document.createElement("br")
+    firstLink.parentNode.insertBefore(lineBreak, firstLink)
+
+    var links = document.head.getElementsByTagName('link')
+    for (var i = 0; i < links.length; i++)
+        if ( links[i].href = "./css/style.css")
+            links[i].href = "./css/mobile.css"
 }
 
-/* TODO: Switch to mobile-friendly css style if accessed from mobile client.
-*/
+if (isMobileUser()) setMobileStyles()
