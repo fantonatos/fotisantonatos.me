@@ -1,10 +1,10 @@
 function isMobileUser()
 {
     let mobile = false;
-    let mobilekeywords = ['blackberry', 'iphone', 'ipad', 'ipod', 'android', 'mobile', 'webos', 'phone', 'iemobile'];
+    let mobileKeywords = ['blackberry', 'iphone', 'ipad', 'ipod', 'android', 'mobile', 'webos', 'phone', 'iemobile'];
 
     // Detect if device is mobile
-    mobilekeywords.forEach(element => {
+    mobileKeywords.forEach(element => {
         if(navigator.userAgent.toLowerCase().search(element) != -1)
             mobile = true;
     });
@@ -23,3 +23,6 @@ if (isMobileUser())
         link.style.fontSize = "150%"
     })
 }
+
+/* TODO: Switch to mobile-friendly css style if accessed from mobile client.
+*/
